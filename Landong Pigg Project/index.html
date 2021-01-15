@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landon Pigg | Home</title>
+    <link href="https://css.gg/play-button-o.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="nav main-nav">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./store.html">STORE</a></li>
+          <li><a href="./about.html">ABOUT</a></li>
+        </ul>
+      </nav>
+
+      <h1 class="band-name band-name-large">Landon Pigg</h1>
+      <div class="container">
+        <button class="btn btn-header" type="button">
+          Get our latest Album
+        </button>
+      </div>
+
+      <!-- <iframe
+        class="header-vid"
+        width="560"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/OvCvP1AWTm4?start=4"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe> -->
+      <iframe
+        class="header-vid"
+        src="https://open.spotify.com/embed/artist/1whjlG0NSaQytgDIWz10GS"
+        width="300"
+        height="380"
+        frameborder="0"
+        allowtransparency="true"
+        allow="encrypted-media"
+      ></iframe>
+
+      <!-- <i class="gg-play-button-o"></i> -->
+      <!-- <button class="btn btn-header btn-play" type="button">&#9658;</button> -->
+    </header>
+    <section class="content-section container">
+      <h2 class="section-header">Tours</h2>
+      <div>
+        <div class="tour-row">
+          <span class="tour-item tour-date">July 16</span>
+          <span class="tour-item tour-city"> Detroit, Mi</span>
+          <span class="tour-item tour-arena"> DTE Energy Music Theatre</span>
+          <button class="btn tour-item tour-btn btn-primary" type="button">
+            Buy Tickets
+          </button>
+        </div>
+        <div class="tour-row">
+          <span class="tour-item tour-date">July 19</span>
+          <span class="tour-item tour-city">Lorem, ipsum.</span>
+          <span class="tour-item tour-arena"> Lorem, ipsum dolor.</span>
+          <button class="btn tour-item tour-btn btn-primary" type="button">
+            Buy Tickets
+          </button>
+        </div>
+        <div class="tour-row">
+          <span class="tour-item tour-date">July 22</span>
+          <span class="tour-item tour-city"> Lorem, ipsum.</span>
+          <span class="tour-item tour-arena"> Lorem, ipsum dolor.</span>
+          <button class="btn tour-item tour-btn btn-primary" type="button">
+            Buy Tickets
+          </button>
+        </div>
+        <div class="tour-row">
+          <span class="tour-item tour-date">July 29</span>
+          <span class="tour-item tour-city"> Lorem, ipsum.</span>
+          <span class="tour-item tour-arena"> Lorem, ipsum dolor.</span>
+          <button class="btn tour-item tour-btn btn-primary" type="button">
+            Buy Tickets
+          </button>
+        </div>
+        <div class="tour-row">
+          <span class="tour-item tour-date">Aug 02</span>
+          <span class="tour-item tour-city"> Lorem, ipsum.</span>
+          <span class="tour-item tour-arena"> Lorem, ipsum dolor.</span>
+          <button class="btn tour-item tour-btn btn-primary" type="button">
+            Buy Tickets
+          </button>
+        </div>
+        <div class="tour-row">
+          <span class="tour-item tour-date">Aug 07</span>
+          <span class="tour-item tour-city"> Lorem, ipsum.</span>
+          <span class="tour-item tour-arena"> Lorem, ipsum dolor.</span>
+          <button
+            class="btn tour-item tour-btn btn-primary"
+            class="btn tour-item tour-btn btn-primary"
+            type="button"
+          >
+            Buy Tickets
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="container main-footer-container">
+        <!-- <h3 class="band-name">Landon Pigg</h3> -->
+        <a class="band-name" href="./index.html">Landon Pigg</a>
+        <br />
+        <p class="sub-footer">copyright &copy; 2021</p>
+        <ul class="nav footer-nav">
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCNaJ-JOwXJ4xSvz0oC5X9yg"
+              target="_blank"
+            >
+              <img src="./img/Youtube Logo.png" alt="youtube logo"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/artist/1whjlG0NSaQytgDIWz10GS?autoplay=true"
+              target="_blank"
+              ><img src="./img/Spotify Logo.png" alt="spotify logo"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/landonpigg/" target="_blank"
+              ><img src="./img/Facebook Logo.png" alt="twitter logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        //Check to see if the window is top if not then display button
+        $(window).scroll(function () {
+          // Show button after 100px
+          var showAfter = 100;
+          if ($(this).scrollTop() > showAfter) {
+            $(".back-to-top").fadeIn();
+          } else {
+            $(".back-to-top").fadeOut();
+          }
+        });
+
+        //Click event to scroll to top
+        $(".back-to-top").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 800);
+          return false;
+        });
+      });
+    </script>
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"></a>
+  </body>
+</html>
