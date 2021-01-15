@@ -1,1 +1,1 @@
-# landonpigg
+Simple artist website project
